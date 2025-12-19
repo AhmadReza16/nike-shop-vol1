@@ -1,0 +1,41 @@
+{
+  "name": "nike-shop",
+  "version": "1.0.0",
+  "description": "An advanced e-commerce platform for Nike shoes",
+  "main": "backend/src/server.js",
+  "scripts": {
+    "setup": "npm install --prefix backend && npm install --prefix frontend",
+    "backend:install": "npm install --prefix backend",
+    "backend:dev": "npm run dev --prefix backend",
+    "backend:start": "npm start --prefix backend",
+    "frontend:install": "npm install --prefix frontend",
+    "frontend:dev": "npm run dev --prefix frontend",
+    "frontend:build": "npm run build --prefix frontend",
+    "frontend:start": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run backend:dev\" \"npm run frontend:dev\"",
+    "build": "npm run build --prefix frontend",
+    "lint": "npm run lint --prefix frontend"
+  },
+  "keywords": [
+    "nike",
+    "e-commerce",
+    "shoes",
+    "shop",
+    "next.js",
+    "express",
+    "mongodb"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AhmadReza16/nike-shop-vol1.git"
+  }
+}
